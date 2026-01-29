@@ -21,22 +21,23 @@
 
 **Demo Navigation:**
 - Open `demo.ipynb`
-- Show cells 1-3: Data loading and patient alignment
-- **Say:** "Here we see 100 patients with EGFR, TP53, KRAS mutations linked to treatment responses"
+- Show cells 2-3: Data loading and patient alignment
+- **Say:** "Here we see 10 patients with EGFR, TP53, KRAS, ALK, BRCA1, BRCA2, and PIK3CA mutations linked to treatment responses. Notice how patient P1 has both TP53 and EGFR mutations and responded to therapy, while P2 has KRAS and BRCA1 but didn't respond."
+
 
 ### **Slide 3: Feature Engineering (1 min)**
-*"We transform raw genomic data into ML-ready features through gene-level encoding and interaction terms."*
+*"We transform raw genomic data into ML-ready features through gene-level binary encoding and clinical feature integration."*
 
 **Demo Navigation:**
 - Show cells 4-5: Feature engineering pipeline
-- **Say:** "Notice how we create binary mutation features and interaction terms like EGFR*TP53 that capture biological complexity"
+- **Say:** "Notice how we create binary mutation features for each gene - 1 if mutation present, 0 if absent. We also encode clinical features like age and sex. This creates our feature matrix with 9 predictors: 7 genes plus age and sex."
 
 ### **Slide 4: Model Results (30s)**
-*"Our baseline Random Forest achieves 75% accuracy in predicting response, with EGFR mutations being the strongest predictor - consistent with clinical literature."*
+*"Our baseline models achieve strong performance: Logistic Regression gets 100% accuracy on this small dataset, while Random Forest achieves 75%. More importantly, the feature importance makes biological sense."*
 
 **Demo Navigation:**
-- Show cells 6-7: Model training and interpretation
-- **Say:** "The model correctly identifies EGFR as key predictor, validating our approach"
+- Show cells 5-6: Model training and interpretation
+- **Say:** "Look at the Random Forest feature importances - age is the strongest predictor (0.500), followed by EGFR (0.225) and ALK (0.200). This aligns with clinical knowledge that both patient characteristics and specific mutations drive treatment response."
 
 ---
 
