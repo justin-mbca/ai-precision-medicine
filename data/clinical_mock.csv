@@ -1,0 +1,16 @@
+# Create a small synthetic clinical dataset aligned with ngs_mock.csv.
+# Columns: patient_id, drug, response
+# response should be binary (1 = response, 0 = no response)
+# Use a single targeted therapy drug.
+# Include matching patient_ids.
+patient_id,drug,response
+P1,Erlotinib,1
+P2,Erlotinib,0
+P3,Erlotinib,1
+P4,Erlotinib,0
+P5,Erlotinib,1
+P6,Erlotinib,0
+P7,Erlotinib,1
+P8,Erlotinib,0
+P9,Erlotinib,1
+P10,Erlotinib,0

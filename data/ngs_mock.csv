@@ -1,0 +1,20 @@
+# Create a small synthetic NGS variant dataset for demo purposes.
+# Columns: patient_id, gene, variant
+# Use common oncology-related genes.
+# Include 10–15 rows total.
+patient_id,gene,variant
+P1,TP53,R175H
+P1,EGFR,L858R
+P2,BRCA1,185delAG
+P2,KRAS,G12D
+P3,ALK,F1174L
+P3,PIK3CA,E545K
+P4,EGFR,T790M
+P5,TP53,R273C
+P5,BRCA2,6174delT
+P6,KRAS,G13D
+P7,ALK,R1275Q
+P8,PIK3CA,H1047R
+P9,BRCA1,5382insC
+P10,TP53,R248Q
+P10,EGFR,G719S
